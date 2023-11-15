@@ -6,7 +6,7 @@ function NotesList({ notes, onDelete, onMove, archive }) {
   
     return (
       <div className="notes-list">
-        {filteredNotes.length > 0 ? (
+        {filteredNotes.length >= 0 ? (
           filteredNotes.map((note) => (
             <NotesItem 
             key={note.id} 

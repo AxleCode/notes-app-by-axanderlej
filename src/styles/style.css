@@ -193,6 +193,19 @@ main .wrapper .card-notes .card-active{
   margin-top: 20px;
 }
 
+.notes-item__title{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.notes-item__body{
+  font-size: 14px;
+}
+
+.notes-item__createAt{
+  font-size: 12px;
+}
+
 .note-item__delete {
   background: none;
   color: red;
@@ -223,11 +236,7 @@ main .wrapper .card-notes .card-active{
   width: 22.5%;
   margin: 10px 10px 10px 10px;
   padding-bottom: 20px;
-}
-
-.list{
-  height: 200px;
-  
+  height: auto;
 }
 
 main .wrapper .card-notes .card-archive{
@@ -280,3 +289,46 @@ footer{
 .read-the-docs {
   color: #888;
 }
+
+@media screen and (max-width: 1330px) {
+  .item,
+  .input {
+    width: 300px;
+  }
+  
+  main .wrapper .addBook{
+    margin-top: 15px;
+  }
+  
+  .addBook button {
+    width: 70%; 
+  }
+  
+  .complete-button {
+    font-size: 10px;
+  }
+  
+  .trash-button {
+    font-size: 10px;
+  }
+  
+  .unComplete-button{
+    width: 50%;
+    font-size: 10px;
+  }
+  }
+  
+  @media screen and (max-width: 1200px) {
+  main .wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header{
+    width: 10px;
+  }
+  .navbar{
+    width: 80%;
+  }
+  
+  }
